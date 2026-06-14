@@ -22,3 +22,7 @@ htmlcov/
 .DS_Store
 .idea/
 .vscode/
+
+# Claude internal notes / memory (keep private, not part of the package)
+CLAUDE.md
+.claude/
