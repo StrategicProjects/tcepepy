@@ -1,5 +1,13 @@
 # tcepepy
 
+[![PyPI version](https://img.shields.io/pypi/v/tcepepy.svg)](https://pypi.org/project/tcepepy/)
+[![Python versions](https://img.shields.io/pypi/pyversions/tcepepy.svg)](https://pypi.org/project/tcepepy/)
+[![tests](https://github.com/StrategicProjects/tcepepy/actions/workflows/tests.yml/badge.svg)](https://github.com/StrategicProjects/tcepepy/actions/workflows/tests.yml)
+[![docs](https://github.com/StrategicProjects/tcepepy/actions/workflows/docs.yml/badge.svg)](https://strategicprojects.github.io/tcepepy/)
+[![Downloads](https://img.shields.io/pypi/dm/tcepepy.svg)](https://pypi.org/project/tcepepy/)
+[![License: MIT](https://img.shields.io/badge/license-MIT-darkviolet.svg)](LICENSE)
+[![Code style: black](https://img.shields.io/badge/code%20style-black-000000.svg)](https://github.com/psf/black)
+
 Python client for the [TCE-PE](https://www.tce.pe.gov.br/) (Tribunal de Contas
 do Estado de Pernambuco) **Open Data API**. It is the Python counterpart of the
 R package [`tceper`](https://github.com/StrategicProjects/tceper).
