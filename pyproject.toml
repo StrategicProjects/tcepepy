@@ -1,0 +1,55 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "tcepepy"
+version = "0.1.0"
+description = "Python client for the Open Data API of the Pernambuco Court of Accounts (TCE-PE)"
+readme = "README.md"
+requires-python = ">=3.9"
+license = { file = "LICENSE" }
+authors = [
+    { name = "Andre Leite", email = "leite@castlab.org" },
+    { name = "Marcos Wasilew", email = "marcos.wasilew@gmail.com" },
+    { name = "Hugo Vasconcelos", email = "hugo.vasconcelos@ufpe.br" },
+    { name = "Carlos Amorin", email = "carlos.agaf@ufpe.br" },
+    { name = "Diogo Bezerra", email = "diogo.bezerra@ufpe.br" },
+]
+keywords = ["tce-pe", "pernambuco", "open-data", "dados-abertos", "government", "brazil"]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Intended Audience :: Science/Research",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3",
+    "Topic :: Scientific/Engineering",
+]
+dependencies = [
+    "httpx>=0.24",
+    "pandas>=1.5",
+]
+
+[project.optional-dependencies]
+rich = ["rich>=13.0"]
+dev = ["pytest>=7.0", "respx>=0.20", "rich>=13.0"]
+docs = [
+    "mkdocs>=1.5",
+    "mkdocs-material>=9.5",
+    "mkdocstrings[python]>=0.24",
+    "black>=24.0",
+]
+
+[project.urls]
+Homepage = "https://github.com/StrategicProjects/tcepepy"
+Repository = "https://github.com/StrategicProjects/tcepepy"
+"Bug Reports" = "https://github.com/StrategicProjects/tcepepy/issues"
+"API docs" = "https://sistemas.tcepe.tc.br/DadosAbertos/"
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/tcepepy"]
+
+[tool.hatch.build.targets.wheel.force-include]
+"src/tcepepy/_data/tcepe_dados_abertos_catalogo.json" = "tcepepy/_data/tcepe_dados_abertos_catalogo.json"
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]

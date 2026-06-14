@@ -1,0 +1,44 @@
+/* Match the tceper pkgdown palette (Bootstrap "cosmo" primary blue). */
+:root {
+  --md-primary-fg-color:        #0d6efd;
+  --md-primary-fg-color--light: #3d8bfd;
+  --md-primary-fg-color--dark:  #0a58ca;
+  --md-accent-fg-color:         #0a58ca;
+}
+
+[data-md-color-scheme="slate"] {
+  --md-primary-fg-color:        #0d6efd;
+  --md-accent-fg-color:         #3d8bfd;
+}
+
+/* Logo sizing in the header, mirroring the pkgdown .logo rule. */
+.md-header__button.md-logo img {
+  height: 1.8rem;
+}
+
+/* GitHub-flavored alert colors, matching tceper's warning/important banners. */
+.md-typeset .admonition.warning,
+.md-typeset details.warning {
+  border-left-color: #d29922;
+}
+.md-typeset .warning > .admonition-title,
+.md-typeset .warning > summary {
+  background-color: rgba(210, 153, 34, 0.1);
+}
+.md-typeset .warning > .admonition-title::before,
+.md-typeset .warning > summary::before {
+  background-color: #d29922;
+}
+
+.md-typeset .admonition.note,
+.md-typeset details.note {
+  border-left-color: #8250df;
+}
+.md-typeset .note > .admonition-title,
+.md-typeset .note > summary {
+  background-color: rgba(130, 80, 223, 0.1);
+}
+.md-typeset .note > .admonition-title::before,
+.md-typeset .note > summary::before {
+  background-color: #8250df;
+}

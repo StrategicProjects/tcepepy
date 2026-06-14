@@ -1,0 +1,85 @@
+site_name: tcepepy
+site_description: Python client for the TCE-PE Open Data API
+site_url: https://strategicprojects.github.io/tcepepy/
+repo_url: https://github.com/StrategicProjects/tcepepy
+repo_name: StrategicProjects/tcepepy
+copyright: MIT licensed. Data belongs to TCE-PE.
+
+theme:
+  name: material
+  logo: assets/logo.svg
+  favicon: assets/favicon.svg
+  icon:
+    repo: fontawesome/brands/github
+  palette:
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: blue
+      accent: blue
+      toggle:
+        icon: material/weather-night
+        name: Switch to dark mode
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: blue
+      accent: blue
+      toggle:
+        icon: material/weather-sunny
+        name: Switch to light mode
+  features:
+    - navigation.tabs
+    - navigation.sections
+    - navigation.top
+    - search.suggest
+    - search.highlight
+    - content.code.copy
+    - toc.follow
+
+extra_css:
+  - stylesheets/extra.css
+
+plugins:
+  - search
+  - mkdocstrings:
+      handlers:
+        python:
+          paths: [src]
+          options:
+            docstring_style: numpy
+            show_source: false
+            show_signature_annotations: true
+            separate_signature: true
+            members_order: source
+
+markdown_extensions:
+  - admonition
+  - pymdownx.details
+  - pymdownx.superfences
+  - pymdownx.highlight:
+      anchor_linenums: true
+  - tables
+  - toc:
+      permalink: true
+
+nav:
+  - Home: index.md
+  - Guide:
+      - Getting started: guide/getting-started.md
+      - Exploring endpoints: guide/exploring-endpoints.md
+      - Endpoint reference: guide/endpoints-reference.md
+  - Reference:
+      - Overview: reference/index.md
+      - Core: reference/core.md
+      - Endpoint catalog: reference/catalog.md
+      - Cache: reference/cache.md
+      - Configuration: reference/config.md
+      - Revenues: reference/revenues.md
+      - Expenditures: reference/expenditures.md
+      - Budget commitments: reference/commitments.md
+      - Suppliers: reference/suppliers.md
+      - Procurement & contracts: reference/procurement.md
+      - Public works: reference/public-works.md
+      - Legal processes: reference/processes.md
+      - Personnel: reference/personnel.md
+      - Reference tables: reference/reference-tables.md
+      - RemessaTCEPE: reference/remessa.md
