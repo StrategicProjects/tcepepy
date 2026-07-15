@@ -4,6 +4,7 @@ type: software
 title: "tcepepy: Python client for the Open Data API of the Pernambuco Court of Accounts (TCE-PE)"
 version: 0.1.1
 date-released: 2026-07-14
+doi: 10.5281/zenodo.21366293
 license: MIT
 repository-code: "https://github.com/StrategicProjects/tcepepy"
 url: "https://strategicprojects.github.io/tcepepy/"

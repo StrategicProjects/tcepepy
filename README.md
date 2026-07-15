@@ -5,6 +5,7 @@
 [![tests](https://github.com/StrategicProjects/tcepepy/actions/workflows/tests.yml/badge.svg)](https://github.com/StrategicProjects/tcepepy/actions/workflows/tests.yml)
 [![docs](https://github.com/StrategicProjects/tcepepy/actions/workflows/docs.yml/badge.svg)](https://strategicprojects.github.io/tcepepy/)
 [![Downloads](https://img.shields.io/pypi/dm/tcepepy.svg)](https://pypi.org/project/tcepepy/)
+[![DOI](https://zenodo.org/badge/1269475340.svg)](https://doi.org/10.5281/zenodo.21366293)
 [![License: MIT](https://img.shields.io/badge/license-MIT-darkviolet.svg)](LICENSE)
 [![Code style: black](https://img.shields.io/badge/code%20style-black-000000.svg)](https://github.com/psf/black)
 
