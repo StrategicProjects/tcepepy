@@ -1,0 +1,50 @@
+{
+  "upload_type": "software",
+  "title": "tcepepy: Python client for the Open Data API of the Pernambuco Court of Accounts (TCE-PE)",
+  "description": "Python client for the Open Data API of TCE-PE (Tribunal de Contas do Estado de Pernambuco). Wraps 71 API endpoints into functions that accept snake_case parameter names and return pandas DataFrames, with an offline catalog for endpoint discovery. Python port of the R package tceper.",
+  "license": "MIT",
+  "creators": [
+    {
+      "name": "Leite, André",
+      "affiliation": "Universidade Federal de Pernambuco"
+    },
+    {
+      "name": "Wasiliew, Marcos"
+    },
+    {
+      "name": "Vasconcelos, Hugo",
+      "affiliation": "Universidade Federal de Pernambuco"
+    },
+    {
+      "name": "Amorim, Carlos",
+      "affiliation": "Universidade Federal de Pernambuco"
+    },
+    {
+      "name": "Bezerra, Diogo",
+      "affiliation": "Universidade Federal de Pernambuco"
+    }
+  ],
+  "keywords": [
+    "tce-pe",
+    "pernambuco",
+    "open-data",
+    "dados-abertos",
+    "government",
+    "brazil",
+    "python"
+  ],
+  "related_identifiers": [
+    {
+      "identifier": "https://pypi.org/project/tcepepy/",
+      "relation": "isIdenticalTo",
+      "resource_type": "software",
+      "scheme": "url"
+    },
+    {
+      "identifier": "https://github.com/StrategicProjects/tceper",
+      "relation": "isDerivedFrom",
+      "resource_type": "software",
+      "scheme": "url"
+    }
+  ]
+}

@@ -1,6 +1,13 @@
 # Changelog
 
-## 0.1.0 (unreleased)
+## 0.1.1 (2026-07-14)
+
+- Corrected author name spellings in the package metadata (André Leite,
+  Marcos Wasiliew, Carlos Amorim).
+- Added citation metadata: `CITATION.cff` and `.zenodo.json` (Zenodo DOI
+  archiving via the GitHub integration).
+
+## 0.1.0 (2026-06-14)
 
 Initial release — Python port of the R package
 [`tceper`](https://github.com/StrategicProjects/tceper).

@@ -39,7 +39,7 @@ from .request import (
     request,
 )
 
-__version__ = "0.1.0"
+__version__ = "0.1.1"
 
 # Re-export every generated endpoint wrapper at the top level.
 for _name in _endpoints.__all__:

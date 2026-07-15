@@ -4,17 +4,20 @@ build-backend = "hatchling.build"
 
 [project]
 name = "tcepepy"
-version = "0.1.0"
+version = "0.1.1"
 description = "Python client for the Open Data API of the Pernambuco Court of Accounts (TCE-PE)"
 readme = "README.md"
 requires-python = ">=3.9"
 license = { file = "LICENSE" }
 authors = [
-    { name = "Andre Leite", email = "leite@castlab.org" },
-    { name = "Marcos Wasilew", email = "marcos.wasilew@gmail.com" },
+    { name = "André Leite", email = "leite@castlab.org" },
+    { name = "Marcos Wasiliew", email = "marcos.wasilew@gmail.com" },
     { name = "Hugo Vasconcelos", email = "hugo.vasconcelos@ufpe.br" },
-    { name = "Carlos Amorin", email = "carlos.agaf@ufpe.br" },
+    { name = "Carlos Amorim", email = "carlos.agaf@ufpe.br" },
     { name = "Diogo Bezerra", email = "diogo.bezerra@ufpe.br" },
+]
+maintainers = [
+    { name = "André Leite", email = "leite@castlab.org" },
 ]
 keywords = ["tce-pe", "pernambuco", "open-data", "dados-abertos", "government", "brazil"]
 classifiers = [
