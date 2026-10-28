@@ -167,6 +167,7 @@ GROUPS = [
             "legal_instrument_documents",
             "legal_instrument_items",
             "legal_instrument_participants",
+            "legal_instrument_terms",
             "procurement_processes",
             "procurement_process_documents",
             "procurement_process_budget",
@@ -202,7 +203,7 @@ def _write_endpoint_table(root: str) -> None:
 
     lines = [
         "# Endpoint reference\n",
-        "All 71 endpoints, with the `tcepepy` wrapper function for each. Use",
+        f"All {len(NAME_TO_ENDPOINT)} endpoints, with the `tcepepy` wrapper function for each. Use",
         "`tcepepy.params(<endpoint>)` and `tcepepy.fields(<endpoint>)` to inspect",
         "parameters and output fields.\n",
         "| Function | Endpoint | Group | Description |",

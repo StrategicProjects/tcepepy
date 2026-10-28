@@ -1,6 +1,6 @@
 # Endpoint reference
 
-All 71 endpoints, with the `tcepepy` wrapper function for each. Use
+All 72 endpoints, with the `tcepepy` wrapper function for each. Use
 `tcepepy.params(<endpoint>)` and `tcepepy.fields(<endpoint>)` to inspect
 parameters and output fields.
 
@@ -67,6 +67,7 @@ parameters and output fields.
 | `legal_instrument_documents()` | `Remessa_InstrumentoJuridicoDocumento` | RemessaTCEPE | Documentos de um instrumento jurídico |
 | `legal_instrument_items()` | `Remessa_InstrumentoJuridicoItens` | RemessaTCEPE | Itens de um instrumento jurídico |
 | `legal_instrument_participants()` | `Remessa_InstrumentoJuridicoParticipantes` | RemessaTCEPE | Partes de um instrumento jurídico |
+| `legal_instrument_terms()` | `Remessa_InstrumentoJuridicoTermos` | RemessaTCEPE | Termos dos instrumentos jurídicos |
 | `procurement_processes()` | `Remessa_ProcessoContratacao` | RemessaTCEPE | Dados dos processos de contratação cadastrados no RemessaTCEPE |
 | `procurement_process_documents()` | `Remessa_ProcessoContratacaoDocumento` | RemessaTCEPE | Documentos de um processo de contratação |
 | `procurement_process_budget()` | `Remessa_ProcessoContratacaoOrcamento` | RemessaTCEPE | Lotes e itens do orçamento de um processo de contratação |

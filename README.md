@@ -13,7 +13,7 @@ Python client for the [TCE-PE](https://www.tce.pe.gov.br/) (Tribunal de Contas
 do Estado de Pernambuco) **Open Data API**. It is the Python counterpart of the
 R package [`tceper`](https://github.com/StrategicProjects/tceper).
 
-`tcepepy` wraps **71 API endpoints** into friendly functions that accept
+`tcepepy` wraps **72 API endpoints** into friendly functions that accept
 `snake_case` parameter names and return `pandas` DataFrames. A built-in catalog
 lets you discover endpoints and inspect their parameters and output fields —
 all offline, without leaving Python.

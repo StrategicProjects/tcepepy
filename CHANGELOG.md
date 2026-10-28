@@ -1,5 +1,16 @@
 # Changelog
 
+## 0.1.2 (2026-10-28)
+
+- New wrapper `legal_instrument_terms()` for the endpoint
+  `Remessa_InstrumentoJuridicoTermos` (amendment terms of legal
+  instruments), added by TCE-PE after the previous release.
+- Refreshed the bundled catalog against the live API (2026-10-28): now
+  **72** endpoints; `UnidadesJurisdicionadas` gained the input parameter
+  `ORGAO`; fixed 100 datetime entries whose `tipo_api` had been glued
+  into `tipo_db` by the original scrape, so `params()`/`fields()` now
+  report `datetime` instead of falling back to `string`.
+
 ## 0.1.1 (2026-07-14)
 
 - Corrected author name spellings in the package metadata (André Leite,

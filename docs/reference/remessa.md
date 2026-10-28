@@ -72,6 +72,13 @@ Data from the RemessaTCEPE system: benefit types, reference sources/dates/codes,
       heading_level: 3
 
 
+::: tcepepy.endpoints.legal_instrument_terms
+    options:
+      show_root_heading: true
+      show_root_full_path: false
+      heading_level: 3
+
+
 ::: tcepepy.endpoints.procurement_processes
     options:
       show_root_heading: true

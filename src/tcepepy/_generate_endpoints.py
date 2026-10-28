@@ -86,6 +86,7 @@ NAME_TO_ENDPOINT = {
     "legal_instrument_documents": "Remessa_InstrumentoJuridicoDocumento",
     "legal_instrument_items": "Remessa_InstrumentoJuridicoItens",
     "legal_instrument_participants": "Remessa_InstrumentoJuridicoParticipantes",
+    "legal_instrument_terms": "Remessa_InstrumentoJuridicoTermos",
     "procurement_processes": "Remessa_ProcessoContratacao",
     "procurement_process_documents": "Remessa_ProcessoContratacaoDocumento",
     "procurement_process_budget": "Remessa_ProcessoContratacaoOrcamento",

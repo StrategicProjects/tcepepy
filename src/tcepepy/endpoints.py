@@ -76,6 +76,7 @@ __all__ = [
     'legal_instrument_documents',
     'legal_instrument_items',
     'legal_instrument_participants',
+    'legal_instrument_terms',
     'procurement_processes',
     'procurement_process_documents',
     'procurement_process_budget',
@@ -1908,6 +1909,36 @@ def legal_instrument_participants(
         cache_key('Remessa_InstrumentoJuridicoParticipantes', params),
         lambda: request(
             'Remessa_InstrumentoJuridicoParticipantes',
+            clean_names=clean_names,
+            max_tries=max_tries,
+            timeout=timeout,
+            progress=progress,
+            verbose=verbose,
+            **params,
+        ),
+        use_cache=cache,
+    )
+
+
+def legal_instrument_terms(
+    *,
+    cache: bool = True,
+    clean_names: bool = True,
+    max_tries: int = 3,
+    timeout: float = 60.0,
+    progress: Optional[bool] = None,
+    verbose: Optional[bool] = None,
+    **params: Any,
+) -> pd.DataFrame:
+    """Termos dos instrumentos jurídicos
+
+    Endpoint ``Remessa_InstrumentoJuridicoTermos`` (group: RemessaTCEPE). Discover parameters and output fields with
+    ``tcepepy.params('Remessa_InstrumentoJuridicoTermos')`` and ``tcepepy.fields('Remessa_InstrumentoJuridicoTermos')``.
+    """
+    return cached(
+        cache_key('Remessa_InstrumentoJuridicoTermos', params),
+        lambda: request(
+            'Remessa_InstrumentoJuridicoTermos',
             clean_names=clean_names,
             max_tries=max_tries,
             timeout=timeout,

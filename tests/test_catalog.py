@@ -9,9 +9,9 @@ from tcepepy.catalog import (
 )
 
 
-def test_catalog_has_71_endpoints():
+def test_catalog_has_72_endpoints():
     df = tce.catalog()
-    assert len(df) == 71
+    assert len(df) == 72
     assert list(df.columns) == ["endpoint", "group", "title", "url"]
 
 
